@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Code Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+<style type="text/css">
+
+	body { 
+		margin: 20px; 
+		font-family: arial, sans-serif;
+		max-width: 1060px;
+		}
+		
+	a { color: #2a6ebb; text-decoration: none;}
+
+	h2 { margin: 120px 0 0 0;}
+	
+	.how { 
+		font-style: italic;
+		color: #aaa;
+		margin-top: 5px;
+	 }
+	
+	.description {}
+	
+	p xmp {display: inline;}
+	
+	.content {
+		position: relative;
+		left: 300px;
+	}
+	
+	.left-nav {
+		position: fixed;
+		left: 0;
+		top: 0;
+		padding: 20px;
+		width: 200px;
+	}
+	
+	.left-nav a {
+		display: block;
+		margin: 0 0 20px 0;
+	}
+
+</style>
+
+	<script src="http://mockups/HASP/Product/js/jquery-1.8.2.min.js"></script> 	
+	<script type="text/javascript" src="http://mockups/HASP/Product/js/left-nav.js"></script>
+	<link rel="stylesheet" href="http://mockups/HASP/Product/css/scroll-up.css" type="text/css" />	
+	<link href="http://mockups/source/fonts/Symbolset/ss-standard/webfonts/ss-standard.css" rel="stylesheet" />
+	<script type="text/javascript">
+		var scrollToTop = true;	
+	</script> 	
+			
+
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+	<div class="left-nav">
+		
+		<a href="#imagemap">Use image maps to create an image hover function</a>	
+		<a href="#internallinks">Show users what link to click on mocks using anchor tags and image maps</a>
+		<a href="#nav">Adding a navigation programmatically</a>
+		<a href="#scroll">Make it easy for users to scroll up a page</a>
+	
+	</div>
+	
+	<div class="content">
+		<h1>Jquery code to improve clickable mockups</h1>
+		
+		<h2 id="imagemap">How do I turn image maps into cool mouseover effects?</h2>
+		<p class="how">This function will take an image and overlay it over an image map on mouse hover. You can only use one image, but it's a good way of bringing an edit function (on say, a list) to life on a mockup</p>
+		
+		<a href="http://mockups/HASP/Product/GBS%20editor/exports/GBS-v3-experiment.html">Example</a>
+		
+		<p class="description">Place this snippet inside the HEAD area of your page. You'll need: an image to use (this goes inside the first set of quotations - dropdowns.png - on the variable 'imgReplacer'), a left-margin (second set of quotations) and an optional link to go to on user click (third set of quotations)</p>
+		
+			<pre class="prettyprint">
+			<code>
+			<xmp>
+			<script src="http://mockups/HASP/Product/js/jquery-1.8.2.min.js"></script>
+			<script type="text/javascript" src="http://mockups/HASP/Product/js/img-replacer.js"></script>
+			<script type="text/javascript">
+			
+				//elements, from left to right: img to use, position from left (no px), url to go onclick
+				var imgReplacer =  new Array("dropdowns.png","695","SOR-dropdown.html") 
+			
+			</script> 
+			</xmp>
+			</code>
+			</pre>
+			<br />
+		
+		
+		
+		
+		<h2 id="internallinks">How do I show internal users what links to click on my mockups?</h2>
+		<p class="how">This function will apply a style to all image maps and anchor tags. It will also put instructions at the bottom of the screen on how to use this function (The user simply needs to press 'V', as instructed, to be able to see all the links on a click-through mockup</p>
+		
+		<a href="http://mockups/HASP/Product/PPB-Settings/exports/PPB-Settings.html">Example</a>
+		
+		<p class="description">Place this snippet inside the HEAD area of your page</p>
+		
+			<pre class="prettyprint">
+			<code>
+			<xmp>
+			
+			<script src="http://mockups/HASP/Product/js/jquery-1.8.2.min.js"></script> 
+			<script type="text/javascript" src="http://mockups/HASP/Product/js/UX-walk-me.js"></script>	
+			
+			</xmp>
+			</code>
+			</pre>
+			
+			
+			
+		<h2 id="nav">Managing a left or top navigation in one place, and adding it programmatically to each mockup</h2>
+		<p class="how">It's a pain to have mockups that all use a similar navigation scheme but which can get out of date quickly because of changes in the navigation or top header area. This function will allow you to take a single image and add it across pages - thereby giving you control over many mockups by changing a single image. It works for center-aligned or left-aligned pages.</p>
+		
+		<a href="#">Example</a>
+		
+		<p class="description">Place this snippet inside the HEAD area of your page</p>
+		
+			<pre class="prettyprint">
+			<code>
+			<xmp>
+			
+			<script src="http://mockups/HASP/Product/js/jquery-1.8.2.min.js"></script> 
+			<script type="text/javascript" src="http://mockups/HASP/Product/js/add-left-nav.js"></script>	
+			
+			<link rel="stylesheet" href="http://mockups/HASP/Product/css/gradient-background.css" type="text/css" />		
+			
+			</xmp>
+			</code>
+			</pre>
+			
+			
+		<h2 id="scroll">Make it easy for users to quickly scroll to the top of a page</h2>
+		<p class="how">Enterprise users especially get stuck scrolling down long lists - and if they need to get to the top of the page, they need to spend a bunch of clicks getting back up to the top. Make it easy for them to get back.</p>
+		
+		<a href="http://mockups/HASP/Product/GBS%20editor/exports/GBS-v3-experiment.html">GBS editor</a>
+		
+		<p class="description">Place this snippet inside the HEAD area of your page</p>
+		
+			<pre class="prettyprint">
+			<code>
+			<xmp>
+			
+			<script src="http://mockups/HASP/Product/js/jquery-1.8.2.min.js"></script> 	
+			<script type="text/javascript" src="http://mockups/HASP/Product/js/add-left-nav.js"></script>	
+			<script type="text/javascript">
+				var scrollToTop = true;	
+			</script> 
+			<link rel="stylesheet" href="http://mockups/HASP/Product/css/gradient-background.css" type="text/css" />		
+			<link href="http://mockups/source/fonts/Symbolset/ss-standard/webfonts/ss-standard.css" rel="stylesheet" />
+			
+			</xmp>
+			</code>
+			</pre>
+	
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>
