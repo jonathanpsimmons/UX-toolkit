@@ -1,0 +1,218 @@
+body {
+  background: #e9f1f6 url("tile.gif") repeat-x;  /* gradient background */
+  font: 18px/28px Helvetica, arial, sans-serif;
+}
+
+.success p,
+.message p {
+	font: 22px/30px arial;
+	letter-spacing: .95px;
+	margin: 0 auto;
+	width: 95%;
+	text-align: center;
+	padding-top: 25px;
+}
+
+/* div.instructions {
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	background: #000;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 5000;
+	height: 50px;
+}
+
+.instructions p {
+	margin: 0 0 -12px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 6000;
+	height: 50px;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 10px;
+	opacity:.9;
+	filter:alpha(opacity=100);
+}*/
+
+.scrollup {
+
+	position: fixed;
+	bottom: 400;
+	background: #000;
+	right: 100;
+	padding: 20px 10px 10px 10px;
+	opacity:.4;
+	filter:alpha(opacity=40);
+	display: none;
+	cursor: pointer;
+
+}
+
+.scrollupup {
+
+	position: fixed;
+	bottom: 400;
+	right: -100px;
+	background: #000;
+	right: 100;
+	padding: 20px 10px 10px 10px;
+	opacity:.4;
+	filter:alpha(opacity=40);
+	display: none;
+	cursor: pointer;
+
+}
+.ss-up {
+
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+
+}
+
+.dropdown:hover {
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+	box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 7000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 3px 0 0;
+	list-style: none;
+	background-color: #f0f7fe;
+	border: 1px solid #ccc;
+	border: 1px solid #91cfee;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+.dropdown-menu > li > a {
+	display: block;
+	padding: 3px 8px;
+	clear: both;
+	font-weight: normal;
+	line-height: 20px;
+	color: #333333;
+	white-space: nowrap;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+
+@media (min-width: 1231px) {
+
+	.navigation {
+		height: 844px;
+		width: 170px;
+		background: url("left-rail-july-2013.png");
+		position: absolute;
+		top: 65px;
+		z-index: 1000;
+		left: 50%;
+		margin: 0 0 0 -585px;
+	}
+
+	.success,
+	.message {
+		color: #fff;
+		display: none;
+		height: 80px;
+		width: 920px;
+		background: #79b559;
+		position: absolute;
+		top: 125px;
+		z-index: 1000;
+		left: 50%;
+		margin: 0 0 0 -362px;
+	}
+
+}
+
+@media (max-width: 1230px) {
+
+	.navigation {
+		height: 844px;
+		width: 170px;
+		background: url("left-rail-july-2013.png");
+		position: absolute;
+		top: 65px;
+		z-index: 1000;
+		left: 0;
+		margin: 0 0 0 20px;
+	}
+
+	.success,
+	.message {
+		position: absolute;
+		top: 65px;
+		z-index: 1000;
+		left: 50%;
+		margin: 0 0 0 -585px;
+	}
+
+}
+
+
+
+/*
+links to paste into files - may have to change file location
+
+<script src="../../js/jquery-1.8.2.min.js"></script> 									<!--adds jquery, must be first-->
+<script type="text/javascript" src="../../js/UX-walk-me.js"></script>
+<script type="text/javascript">
+	var addLeftNav = true;
+	var success = new Array(width, left-margin,"Success message");						// width and left-margin are optional, include both or none...
+</script>
+<script type="text/javascript" src="../../js/image-center.js"></script> 				<!--automatically centers the image-->
+<script type="text/javascript" src="../../js/left-nav.js"></script> 						<!--adds a left-hand navigation for Dashboard pages-->
+
+<link href="../../../../source/fonts/Symbolset/ss-standard/webfonts/ss-standard.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/gradient-background.css" type="text/css" />		<!--adds gradient background for HomeAway branding-->
+*/
+
+/*
+
+<script type="text/javascript">
+	var addLeftNav = true;
+	var success = true;
+	var insert = "PPB-Settings-new-override-2.png";
+</script>
+
+*/
+
+
+
+/*
+links to paste into files - may have to change file location
+
+<script src="../js/jquery-1.8.2.min.js"></script> 									<!--adds jquery, must be first-->
+<script type="text/javascript" src="../js/image-center.js"></script> 				<!--automatically centers the image-->
+<script type="text/javascript">var addLeftNav = false;</script> 						<!--ADD LEFT NAV -- NO -->
+<script type="text/javascript" src="../js/left-nav.js"></script> 					<!--adds a left-hand navigation for Dashboard pages-->
+
+<link rel="stylesheet" href="../css/gradient-background.css" type="text/css" />		<!--adds gradient background for HomeAway branding-->
+*/
+
+
+
