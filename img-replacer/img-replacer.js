@@ -39,8 +39,6 @@ documentation URL:http://mockups/HASP/Product/js/Code-Documentation.html
         var meta      = this.$el.data(name + '-opts');
         this.opts     = $.extend(this._defaults, options, meta);
 
-        console.log(this.opts.imgReplacer);
-
         // Initialization code to get the ball rolling
         // If your plugin is simple, this may not be necessary and
         // you could place your implementation here
@@ -111,11 +109,8 @@ documentation URL:http://mockups/HASP/Product/js/Code-Documentation.html
                                     opcty = '1';
 
                                 } else {
-
                                     console.log("There's a problem with one of the variables being passed. Are you trying to pass a color or image?");
-
                                 }
-
 
                                 //Append the DIV to the body, give it CSS attributes
                                 //v in classname is used elsewhere in function
@@ -203,6 +198,5 @@ documentation URL:http://mockups/HASP/Product/js/Code-Documentation.html
             }
         });
     };
-
 
 })(jQuery, document, window);
