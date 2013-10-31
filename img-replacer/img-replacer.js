@@ -67,7 +67,6 @@ documentation URL:http://mockups/HASP/Product/js/Code-Documentation.html
                         useMapName = useMapName.substr(1);
                     }
 
-
                     //iterate through all of the MAP tags,
                     $('map').each( function() {
 
