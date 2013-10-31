@@ -48,8 +48,17 @@
 //elements, from left to right:
 //img to use, position from left (no px), position from top (no px), url to go onclick
 
-	var imgReplacer =  ["color", 605, 0, "#", "e1e1e1"]; //new Array("color",605,0,"#",'e1e1e1');
-	var bgColor = ["#b5b5b5"];
+	// var imgReplacer =  ["color", 605, 0, "#", "e1e1e1"];
+	// var bgColor = ["#b5b5b5"];
+
+
+	// init onready since there are no options
+	$(function(){
+	    $('body').UXimgReplacer ({
+	        imgReplacer: ["color", 605, 0, "#", "e1e1e1"], // replace this array with individual options
+	        bgColor : ["#b5b5b5"]
+	    });
+	});
 
 </script>
 
